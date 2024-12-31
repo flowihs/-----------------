@@ -5,7 +5,6 @@ import TaskForm from './components/TaskForm.tsx';
 import ContactForm from './components/ContactForm.tsx';
 import './styles/App.css';
 import Home from './components/Home.tsx';
-import EditTaskModal from './components/EditTaskModal.tsx';
 
 interface Task {
     id: number;

@@ -1,4 +1,6 @@
 import React from 'react';
+import './../styles/Modal.css'
+
 
 interface EditTaskModalProps {
     isOpen: boolean;
@@ -7,14 +9,14 @@ interface EditTaskModalProps {
     onSave: (task: Task) => void;
 }
 
-const EditTaskModal: React.FC<EditTaskModalProps> = ({ isOpen, task, onClose, onSave }) => {
-    const [title, setTitle] = React.useState(task ? task.title : '');
-    const [status, setStatus] = React.useState(task ? task.status : '');
+const EditTaskModal: React.FC<EditTaskModalProps> = ({ isOpen, tasks, onClose, onSave }) => {
+    const [title, setTitle] = React.useState(tasks ? task.title : '');
+    const [status, setStatus] = React.useState(tasks ? task.status : '');
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        if (task) {
-            onSave({ ...task, title, status });
+        if (tasks) {
+            onSave({ ...tasks, title, status });
         }
     };
 

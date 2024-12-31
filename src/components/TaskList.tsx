@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import EditTaskModal from './EditTaskModal.tsx';
+import './../styles/TaskList.css'
+import './../styles/utilits.css'
+import './../styles/App.css'
 
 interface Task {
     id: number;
@@ -11,7 +14,7 @@ interface Task {
 interface TaskListProps {
     tasks: Task[];
     onDelete: (id: number) => void;
-    onEdit: (task: Task) => void; // добавлено для редактирования
+    onEdit: (task: Task) => void; 
 }
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, onDelete, onEdit }) => {
@@ -61,7 +64,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onDelete, onEdit }) => {
                                 </button>
                                 <button
                                     className="task-list-td-edit-button"
-                                    onClick={() => handleEdit(task)} // обработчик для редактирования
+                                    onClick={() => handleEdit(task)} 
                                 >
                                     Редактировать
                                 </button>

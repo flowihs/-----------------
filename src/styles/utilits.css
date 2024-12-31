@@ -1,0 +1,27 @@
+.red {
+    background: rgb(255, 144, 144);
+}
+
+.green {
+    background: rgb(153, 255, 153);
+}
+
+.yellow {
+    background: rgb(239, 249, 103);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-none {
+    display: none;
+}
+
+.height-250 {
+    height: 250px;
+}
+
+.height-120 {
+    height: 120px;
+}

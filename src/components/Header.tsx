@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import Arrow from './../img/down-arrow.png'
+import './../styles/Header.css'
+import './../styles/utilits.css'
+import './../styles/App.css'
+
 
 const Header: React.FC = () => {
     const [arrow, setArrow] = useState(false);
@@ -7,6 +11,7 @@ const Header: React.FC = () => {
     const toggleArrow = () => {
         setArrow(!arrow);
     };
+
     return (
         <header className={`header ${arrow === false ? 'height-120': 'height-250' }`}>
             <h1 className="header-title">5S Control</h1>

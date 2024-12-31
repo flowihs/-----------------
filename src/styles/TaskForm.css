@@ -1,0 +1,99 @@
+.form {
+    margin: 20px 0;
+    margin-top: 60px;
+}
+
+.form-title {
+    color: #098C85;
+    margin-bottom: 20px;
+}
+
+.form-up-box {
+    display: flex;
+    gap: 10px;
+}
+
+.form-select {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #098C85;
+    outline: none;
+}
+
+.form-select:hover {
+    color: #098C85;
+    transition: all 0.3s ease;
+}
+
+
+.form-task-input {
+    height: 40px;
+    border: 1px solid #098C85;
+    outline: none;
+    
+}
+
+.form-add-task-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #098C85;
+    background: none;
+    cursor: pointer;
+}
+
+.form-add-task-input:hover {
+    color: white;
+    background: #098C85;
+    transition: all 0.3s ease;
+
+}
+
+@media (max-width: 768px) { 
+
+
+    .form-title {
+        text-align: center;
+        
+    }
+
+    .form-up-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .form-select {
+        height: 80px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        color: #098C85;
+    }
+
+    .form-task-input {
+        height: 80px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        color: #098C85;
+    }
+
+    .form-add-task-input {
+        margin-top: 10px;
+        height: 80px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        background: #098C85;
+        color: white;
+    }
+}
+
+@media (max-width: 425px) { 
+    .form-select,
+    .form-task-input,
+    .form-add-task-input {
+        height: 60px;
+        font-size: 16px;
+    }
+}

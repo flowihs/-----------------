@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../styles/TaskForm.css'
 
 const TaskForm: React.FC<{ onAdd: (task: any) => void }> = ({ onAdd }) => {
     const [title, setTitle] = useState('');
@@ -30,7 +31,7 @@ const TaskForm: React.FC<{ onAdd: (task: any) => void }> = ({ onAdd }) => {
                     type="text"
                     placeholder="Название задачи"
                     value={title}
-                    onChange={(e) => setTitle(e.target.value)}
+                    onChange={(event) => setTitle(event.target.value)}
                     required
                 />
             </div>
