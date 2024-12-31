@@ -27,20 +27,20 @@ const ContactForm: React.FC = () => {
                 type="text"
                 placeholder="Имя"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(event) => setName(event.target.value)}
                 required
             />
             <input
                 type="email"
                 placeholder="Электронная почта"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(event) => setEmail(event.target.value)}
                 required
             />
             <textarea
                 placeholder="Сообщение"
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(event) => setMessage(event.target.value)}
                 required
             ></textarea>
             <button type="submit">Отправить</button>
